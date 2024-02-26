@@ -167,7 +167,7 @@ public class ProductoController {
     }
 
     // Metodo que actualiza un producto cuyo id recibe como parametro
-    @PutMapping("/{id}")
+    @PutMapping(value = "/{id}")
     public ResponseEntity<Map<String, Object>> updateProduct(@Valid @RequestBody Producto producto,
             BindingResult validationResults,
             @PathVariable(name = "id", required = true) Integer idProducto) {
