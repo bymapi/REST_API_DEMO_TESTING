@@ -9,4 +9,5 @@ import com.example.security.entities.OurUser;
 
 public interface OurUserRepository extends JpaRepository<OurUser, Integer> {
     Optional<OurUser> findByEmail(String email);
+    
 }
